@@ -10,7 +10,7 @@ services:
     ports:
       - 8080:80
 
-  cs415-wesiste:
+  cs415-website:
     build: https://github.com/dariobetancourth/FullStackFrontEnd.git#container
     image: image_cs415_website
     container_name: dc_cs415_website
@@ -18,7 +18,7 @@ services:
     ports:
       - 80:80
 
-cs415-database:
+  cs415-database:
     build: https://github.com/dariobetancourth/FullStack-BackEnd.git#container:database
     image: image_cs415_database
     container_name: dc_cs415_database
@@ -32,4 +32,4 @@ cs415-database:
 
 networks:
   cs415-network:
-  
+
